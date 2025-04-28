@@ -1,0 +1,16 @@
+{
+  "name": "my-html-js-project",
+  "version": "1.0.0",
+  "description": "A simple HTML and JavaScript project.",
+  "main": "src/script.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
