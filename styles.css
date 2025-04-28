@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid; /* Använd grid-layout */
+  grid-template-rows: auto 1fr; /* Header högst upp, resten nedanför */
+  grid-template-columns: 200px 1fr; /* Meny till vänster, innehåll till höger */
+  background-color: #f9f9f9;
+  color: #333;
+  height: 100vh; /* Gör att layouten fyller hela höjden */
+}
+
+header {
+  grid-column: 1 / 3; /* Headern sträcker sig över båda kolumnerna */
+  text-align: center;
+  padding: 4rem 0;
+  background: url("header-image.jpg") no-repeat center center/cover;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0;
+}
+
+.side-menu {
+  grid-row: 2 / 3; /* Placera menyn i andra raden */
+  background: #ffffff;
+  color: #fff;
+  padding: 1rem 0;
+  width: 120px; /* Ändra bredden på menyn till 150px */
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu ul li {
+  margin: 1rem 0;
+}
+
+.side-menu ul li a {
+  color: #131010;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  display: block;
+  transition: background 0.3s;
+}
+
+.side-menu ul li a:hover {
+  background: #8d95a3;
+}
+
+main {
+  margin-left: 120px; /* Ge plats för sidomenyn */
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 4rem; /* Ge utrymme mellan sektionerna */
+}
+
+#about,
+#projects,
+#contact {
+  padding-top: 4rem; /* Skapa utrymme ovanför varje sektion */
+  margin-top: -4rem; /* Kompensera för eventuell fast header */
+}
+
+section#contact ul {
+  margin-bottom: 6rem; /* Skapa mellanrum under kontaktlistan */
+}
+html {
+  scroll-behavior: smooth;
+}
